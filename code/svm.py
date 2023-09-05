@@ -33,3 +33,7 @@ prec = precision_score(y_test, y_pred, average='weighted')
 print(f"Accuracy: {acc_score}\nPrecision: {prec}, Recall: {rec}\n\n and CM Score: \n{conf}")
 sns.heatmap(conf)
 plt.show()
+
+# Apparently, SVM doesn't work too well for 6 classes in this dataset. 
+# We could group the classes into two: good and bad,
+# based on the quality rating in the dataframe. 
